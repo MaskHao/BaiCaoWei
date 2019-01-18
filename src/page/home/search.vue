@@ -38,7 +38,7 @@
 import {getHotSearch,homeTab} from '../../service/getData'
 import {setStore,getStore,removeStore} from '../../assets/js/mUtils'
 import confirmDialog from '../../components/confirmDialog'
-import vAlert from 'components/alertDialog'
+import vAlert from '../../components/alertDialog'
     export default {
         data () {
             return {

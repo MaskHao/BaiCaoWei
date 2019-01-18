@@ -23,9 +23,9 @@
 
 <script>
   import {getGoodsCategory,homeTab} from '../../service/getData'
-  import footerBox from 'components/footerBox'
-  import homeIcon from 'components/homeIcon'
-  import {getSessionStore} from 'assets/js/mUtils'
+  import footerBox from '../../components/footerBox'
+  import homeIcon from '../../components/homeIcon'
+  import {getSessionStore} from '../../assets/js/mUtils'
 
   export default {
     data () {

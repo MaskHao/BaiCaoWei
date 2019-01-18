@@ -74,8 +74,8 @@
 </template>
 
 <script>
-  import {userQiyuInfo} from 'service/getData'
-  import {addScript} from 'assets/js/mUtils'
+  import {userQiyuInfo} from '../../service/getData'
+  import {addScript} from '../../assets/js/mUtils'
   export default{
     data(){
       return {

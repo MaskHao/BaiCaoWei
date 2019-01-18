@@ -1,7 +1,7 @@
 /**
  * 存储时间戳转成字符串
  */
-import {getConfig} from 'service/getData'
+import {getConfig} from '../../service/getData'
 export const DateToString = (date) => {
   return date.getFullYear()
     + "-" + (date.getMonth()>8?(date.getMonth()+1):"0"+(date.getMonth()+1))

@@ -17,8 +17,8 @@
 </template>
 
 <script>
-  import {editInfo} from 'service/getData'
-  import Valert from 'components/alertDialog'
+  import {editInfo} from '../../service/getData'
+  import Valert from '../../components/alertDialog'
 
   export default {
     data () {

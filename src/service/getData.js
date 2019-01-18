@@ -2,7 +2,7 @@ import {basePath} from '../config/env'
 import {encrypt} from '../config/Tools'
 import axios from 'axios'
 import router from '../router/router'
-import {delSessionStore,getSessionStore,setSessionStore,trigger,delCookie} from 'assets/js/mUtils'
+import {delSessionStore,getSessionStore,setSessionStore,trigger,delCookie} from '../assets/js/mUtils'
 
 let querystring = require('querystring');
 axios.defaults.baseURL = basePath;

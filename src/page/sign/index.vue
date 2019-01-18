@@ -39,7 +39,7 @@
       <div class="slide-box" :class="{'show':everyInfo != ''}">
         <div class="slide-content">
           <swiper :options="bannerSwiper" ref="mySwiper">
-            <swiper-slide class="swiper-li clearfix" v-for="value in everyInfo">
+            <swiper-slide class="swiper-li clearfix" v-for="value in everyInfo" :key="value">
               <img class="banner-img" :src="value.content_img == ''?'//u.bcwcdn.com/activity_img/2017/img_sign/img.png':value.content_img + '?imageView2/1/w/350/h/260'"/>
               <p v-html="value.content"></p>
               <p class="icon-share" :class="{'show':bcwMall == 1 && value.share_img && vs == 'IOS'}" @click="shareImages(value.share_img)"><img src="../../assets/images/ic_share.png"/> </p>
@@ -49,18 +49,18 @@
         <div class="jt-right"><img src="//u.bcwcdn.com/activity_img/2017/img_sign/jt_right.png"/> </div>
       </div>
       <div class="banner-box cont3 clearfix" :class="{'show':images.length == 3 && images != ''}">
-        <a v-for="value in images" :href="value.skip_url == ''?'javascript:;' :value.skip_url"><img :src="value.image_url"/></a>
+        <a v-for="value in images" :key="value" :href="value.skip_url == ''?'javascript:;' :value.skip_url"><img :src="value.image_url"/></a>
       </div>
       <div class="banner-box cont2 clearfix" :class="{'show':images.length == 2 && images != ''}">
-        <a v-for="value in images" :href="value.skip_url == ''?'javascript:;' :value.skip_url"><img :src="value.image_url"/></a>
+        <a v-for="value in images" :key="value" :href="value.skip_url == ''?'javascript:;' :value.skip_url"><img :src="value.image_url"/></a>
       </div>
       <div class="banner-box cont1 clearfix" :class="{'show':images.length == 1 && images != ''}">
-        <a v-for="value in images" :href="value.skip_url == ''?'javascript:;' :value.skip_url"><img :src="value.image_url"/></a>
+        <a v-for="value in images" :key="value" :href="value.skip_url == ''?'javascript:;' :value.skip_url"><img :src="value.image_url"/></a>
       </div>
       <div class="pro-content">
         <img src="//u.bcwcdn.com/activity_img/2017/img_sign/pro_title.png"/>
         <ul class="clearfix" id="J_ul1">
-          <li data-id="value.id" v-for="value in goodsList">
+          <li data-id="value.id" v-for="value in goodsList" :key="value">
             <a :href="'/data-list/detail-goods?id=' + value.id">
               <div class="goods-img">
                 <img class="lazy" v-lazy="value.goods_img+'?imageView2/1/w/320/h/320'">
@@ -84,7 +84,7 @@
           <p class="num"><i v-html="signDay"></i>天</p>
           <p class="desc">连续签到味豆会魔法递增哦~</p>
           <ul class="clearfix">
-            <li v-for="(value,index) in signInfo" :class="{'on' : value.isSign == 1 || index == 3}">
+            <li v-for="(value,index) in signInfo" :key="value" :class="{'on' : value.isSign == 1 || index == 3}">
               <p class="circular" v-html="'+' +value.integral"></p>
               <p v-html="value.str"></p>
             </li>
@@ -104,9 +104,9 @@
 </template>
 
 <script>
-  import {singRemind,doSign,signIndex,tplGoods,getGoodsAddCart} from 'service/getData'
-  import {jsBridge} from 'assets/js/mUtils'
-  import Valert from 'components/alertDialog'
+  import {singRemind,doSign,signIndex,tplGoods,getGoodsAddCart} from '../../service/getData'
+  import {jsBridge} from '../../assets/js/mUtils'
+  import Valert from '../../components/alertDialog'
   import { swiper, swiperSlide } from 'vue-awesome-swiper'
 
   export default{

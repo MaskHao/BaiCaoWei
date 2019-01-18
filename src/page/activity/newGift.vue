@@ -28,11 +28,11 @@
         <img src="//u.bcwcdn.com/activity_img/2017/img_0629/reject.png" alt="" v-show="rejectShow">
       </div>
 
-      <div v-for="title in titleData">
+      <div v-for="title in titleData" :key="title">
           <div class="first-tit tit pro-content" v-if="goodsList !='' && title.config_key == 'new_user_first_sign'">
               <img :src="title.config_value" alt="" v-if="title.config_value && title.config_key == 'new_user_first_sign'">
               <ul class="clearfix" id="J_ul1">
-                  <li data-id="value.id" v-for="value in goodsList">
+                  <li data-id="value.id" v-for="value in goodsList" :key="value">
                       <a :href="'/data-list/detail-goods?id=' + value.id">
                           <div class="goods-img">
                               <img class="lazy" v-lazy="value.goods_img+'?imageView2/1/w/320/h/320'">
@@ -50,7 +50,7 @@
 
           <div class="second-tit tit" v-if="!isEmptyObject(bannerData) && title.config_key == 'new_user_second_sign'">
               <img :src="title.config_value" alt="" v-if="title.config_key == 'new_user_second_sign' && title.config_value">
-              <div v-for="banner in bannerData" class="banner-img">
+              <div v-for="banner in bannerData" :key="banner" class="banner-img">
                   <a :href="banner.banner_url">
                       <img :src="banner.banner_img" alt="">
                   </a>

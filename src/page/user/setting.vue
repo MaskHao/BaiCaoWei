@@ -21,9 +21,9 @@
 </template>
 
 <script>
-  import {logOut} from 'service/getData'
-  import vAlert from 'components/alertDialog'
-  import {delSessionStore,delCookie} from 'assets/js/mUtils'
+  import {logOut} from '../../service/getData'
+  import vAlert from '../../components/alertDialog'
+  import {delSessionStore,delCookie} from '../../assets/js/mUtils'
 
   export default {
     data () {

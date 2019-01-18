@@ -180,10 +180,10 @@
 
 <!--<script src="https://qiyukf.com/script/260f5087e5cd788f825aa03596ae6733.js&hidden=1" charset="UTF-8"></script>-->
 <script>
-    import {getGoodsDetails,getGoodsAddCart,getGoodsAddCollect,getGoodsDelCollect,getGoodsCollectList,getConfig,userQiyuInfo} from 'service/getData'
+    import {getGoodsDetails,getGoodsAddCart,getGoodsAddCollect,getGoodsDelCollect,getGoodsCollectList,getConfig,userQiyuInfo} from '../../service/getData'
     import { swiper, swiperSlide } from 'vue-awesome-swiper'
-    import vAlert from 'components/alertDialog'
-    import {wxShare,addScript,setSessionStore} from 'assets/js/mUtils'
+    import vAlert from '../../components/alertDialog'
+    import {wxShare,addScript,setSessionStore} from '../../assets/js/mUtils'
     export default {
         data(){
             return {

@@ -121,8 +121,9 @@
         </li>
       </ul>
       <p @click="showMoreNav" v-if="userLevel != 1">
-        <img v-if="navMore == 0" src="../../assets/images/mem_more.png"/>
-        <img v-else src="../../assets/images/mem_more1.png"/>
+        assets/images/mem_more.png
+        <!-- <img v-if="navMore == 0" src="../../assets/images/mem_more.png"/>
+        <img v-else src="../../assets/images/mem_more1.png"/> -->
       </p>
     </div>
     <div class="member-banner">
@@ -183,7 +184,7 @@
 <script>
   import {memberCenter,getGiftDetail,getUserGift,memberBanner,getCoupon} from '../../service/getData'
   import Valert from '../../components/alertDialog'
-  import {jsBridge} from 'assets/js/mUtils'
+  import {jsBridge} from '../../assets/js/mUtils'
 
   export default{
     data(){

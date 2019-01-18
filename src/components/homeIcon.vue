@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import {setSessionStore, delSessionStore} from 'assets/js/mUtils'
+import {setSessionStore, delSessionStore} from '../assets/js/mUtils'
 export default {
   data () {
     return {

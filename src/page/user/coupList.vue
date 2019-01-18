@@ -42,9 +42,9 @@
                 <span class="coup-img-go"><img src="../../assets/images/coup-go.png"/></span>
               </a>
               <!--已使用-->
-              <a v-else-if="nowTab == 3 && value.status == 1" href="javascript:;"><img src="../../assets/images/coup-used.png"/></a>
+              <a v-else-if="nowTab == 3 && value.status == 1" href="javascript:;"><img src="../../assets/images/check_n.png"/></a>
               <!--已过期-->
-              <a v-else-if="nowTab == 3 && value.status == 2" href="javascript:;"><img src="../../assets/images/coup-time.png"/></a>
+              <a v-else-if="nowTab == 3 && value.status == 2" href="javascript:;"><img src="../../assets/images/check_n.png"/></a>
               <div class="coup-bottom" v-html="'有效期 ' + setTime(value.use_start_date,value.use_end_date)"></div>
             </li>
           </ul>
@@ -60,7 +60,7 @@
 </template>
 
 <script>
-  import {coupHistory,coupNear,coupEnable} from 'service/getData'
+  import {coupHistory,coupNear,coupEnable} from '../../service/getData'
 //  import {DateToString} from '../../assets/js/mUtils'
 //  import vAlert from 'components/alertDialog'
 //  import ConfirmDelete from 'components/confirmDialog'

@@ -1,7 +1,7 @@
 import {CryptoJS} from './aes_1'
 import {hexMD5} from './md5'
 import {utf8encode} from './utf8'
-import {getSessionStore,getCookie} from 'assets/js/mUtils'
+import {getSessionStore,getCookie} from '../assets/js/mUtils'
      // 工具对象
 //class Tools{
     // ase 加密

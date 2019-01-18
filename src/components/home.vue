@@ -607,7 +607,7 @@
 import { homeTab, indexModuleData, productList, clickTab, addCart, saleList } from '../service/getData'
 import { swiper, swiperSlide } from 'vue-awesome-swiper'
 import Valert from './alertDialog'
-import { DateToString } from 'assets/js/mUtils'
+import { DateToString } from '../assets/js/mUtils'
 
 export default {
   data () {

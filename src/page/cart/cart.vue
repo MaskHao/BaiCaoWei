@@ -6,8 +6,8 @@
 </template>
 
 <script>
-  import footerBox from 'components/footerBox'
-  import VCartList from 'components/cart'
+  import footerBox from '../../components/footerBox'
+  import VCartList from '../../components/cart'
 
   export default {
     data () {

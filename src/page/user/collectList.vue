@@ -50,9 +50,9 @@
 </template>
 
 <script>
-  import {collection,getGoodsAddCart,cartGoods,delCollectByMore} from 'service/getData'
-  import vAlert from 'components/alertDialog'
-  import ConfirmDelete from 'components/confirmDialog'
+  import {collection,getGoodsAddCart,cartGoods,delCollectByMore} from '../../service/getData'
+  import vAlert from '../../components/alertDialog'
+  import ConfirmDelete from '../../components/confirmDialog'
 
 
   export default {

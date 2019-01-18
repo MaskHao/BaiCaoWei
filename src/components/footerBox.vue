@@ -43,8 +43,8 @@
 </template>
 
 <script>
-import {getBottomBanner, cartGoods} from 'service/getData'
-import {setSessionStore, getSessionStore} from 'assets/js/mUtils'
+import {getBottomBanner, cartGoods} from '../service/getData'
+import {setSessionStore, getSessionStore} from '../assets/js/mUtils'
 export default {
   data () {
     return {

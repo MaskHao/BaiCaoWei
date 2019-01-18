@@ -37,8 +37,8 @@
 
 <script>
     import { getGoodsSearch, getGoodsByCate, getGoodsAddCart,getGoodsCollectList} from '../../service/getData'
-    import vAlert from 'components/alertDialog'
-    import {setSessionStore} from 'assets/js/mUtils'
+    import vAlert from '../../components/alertDialog'
+    import {setSessionStore} from '../../assets/js/mUtils'
     export default {
         name: 'cartList',
         data() {

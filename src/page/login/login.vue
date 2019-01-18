@@ -43,9 +43,9 @@
 </template>
 
 <script>
-    import vAlert from 'components/alertDialog'
-    import {login,sendPhoneCode,loginCode} from 'service/getData'
-    import {setSessionStore,setCookie} from 'assets/js/mUtils'
+    import vAlert from '../../components/alertDialog'
+    import {login,sendPhoneCode,loginCode} from '../../service/getData'
+    import {setSessionStore,setCookie} from '../../assets/js/mUtils'
 
     export default {
         data () {

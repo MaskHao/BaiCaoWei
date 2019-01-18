@@ -17,7 +17,7 @@ Vue.use(VueLazyload, {
     attempt: 3
 })
 
-
+Vue.config.productionTip = false
 new Vue({
   router
 }).$mount('#app')

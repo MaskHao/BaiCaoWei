@@ -1,5 +1,6 @@
 <template>
   <div>
+    111
     <homeData ref='tabList'></homeData>
     <!--<homeIcon v-if="homeIcon != 0"></homeIcon>-->
     <footer-box></footer-box>
@@ -7,11 +8,11 @@
 </template>
 
 <script>
-  import footerBox from 'components/footerBox'
-  import homeData from 'components/home'
-  import homeIcon from 'components/homeIcon'
-  import {getConfig} from 'service/getData'
-  import {wxShare,addWxScript,getSessionStore} from 'assets/js/mUtils'
+  import footerBox from '../../components/footerBox'
+  import homeData from '../../components/home'
+  import homeIcon from '../../components/homeIcon'
+  import {getConfig} from '../../service/getData'
+  import {wxShare,addWxScript,getSessionStore} from '../../assets/js/mUtils'
 
   export default {
     data () {

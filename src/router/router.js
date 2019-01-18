@@ -158,7 +158,7 @@ const routes = [{
     // 积分
     {
       path: '/integral',
-      name:'我的味豆',
+      name:'我的积分味豆',
       component: integral
     },
     // 个人资料
@@ -194,7 +194,7 @@ const routes = [{
     // 客服帮助
     {
       path: '/tell',
-      name:'客服帮助',
+      name:'客服帮助tell',
       component: tell
     },
     // 登录
@@ -284,13 +284,13 @@ const routes = [{
     //退款退货编辑页
     {
         path: '/refundDetail',
-      name:'退货退款',
+      name:'退货退款1',
         component: refundDetail
     },
     //退货编辑
     {
         path: '/refundEdit',
-      name:'退货退款',
+      name:'退货退款2',
         component: refundEdit
     },
     //味豆商城首页
@@ -332,13 +332,13 @@ const routes = [{
     //味豆订单列表
     {
       path:'/integralOrderList',
-      name:'订单列表',
+      name:'味豆订单列表',
       component:integralOrderList
     },
     //味豆订单物流
     {
       path:'/integralTransport',
-      name:'物流信息',
+      name:'味豆物流信息',
       component:integralTransport
     },
     //赚味豆
@@ -380,7 +380,7 @@ const routes = [{
     //新人礼包规则
     {
       path:'/activity/newgift-rule',
-      name:'新人礼包',
+      name:'新人礼包规则',
       component:newGiftRule
     },
     //领券中心

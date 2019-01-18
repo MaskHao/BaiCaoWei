@@ -16,8 +16,8 @@
 </template>
 
 <script>
-  import {coupChange} from 'service/getData'
-  import Valert from 'components/alertDialog'
+  import {coupChange} from '../../service/getData'
+  import Valert from '../../components/alertDialog'
 //  import ConfirmDelete from 'components/confirmDialog'
 
   export default{

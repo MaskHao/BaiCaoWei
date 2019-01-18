@@ -26,8 +26,8 @@
 </template>
 
 <script>
-    import vAlert from 'components/alertDialog'
-    import {sendPhoneCode,register} from 'service/getData'
+    import vAlert from '../../components/alertDialog'
+    import {sendPhoneCode,register} from '../../service/getData'
 
     export default {
         data () {

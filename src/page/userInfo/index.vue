@@ -112,11 +112,11 @@
 </template>
 
 <script>
-  import {userInfo,editInfo,getTrade} from 'service/getData'
-  import {MobileCalendar} from 'assets/js/LCalendar.js'
-  import {MobileArea} from 'assets/js/LArea.js'
-  import {cityData,sexData,marryData,workData} from 'assets/js/city.data.js'
-  import Valert from 'components/alertDialog'
+  import {userInfo,editInfo,getTrade} from '../../service/getData'
+  import {MobileCalendar} from '../../assets/js/LCalendar.js'
+  import {MobileArea} from '../../assets/js/LArea.js'
+  import {cityData,sexData,marryData,workData} from '../../assets/js/city.data.js'
+  import Valert from '../../components/alertDialog'
 
   export default {
     data () {

@@ -27,7 +27,7 @@
 </template>
 
 <script>
-import {getGoodsComments} from 'service/getData'
+import {getGoodsComments} from '../../service/getData'
 export default {
     data(){
         return {

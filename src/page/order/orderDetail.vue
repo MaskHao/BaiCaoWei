@@ -99,9 +99,9 @@
 
 <script>
     import {orderDetail,orderDelete,orderCancel,orderRecept,orderConform,buyAgain} from '../../service/getData'
-    import vAlert from 'components/alertDialog'
+    import vAlert from '../../components/alertDialog'
     import orderHeader from './orderHeader'
-    import vConfirm from 'components/confirmDialog'
+    import vConfirm from '../../components/confirmDialog'
     import payModule from './payModule'
 
     export default {

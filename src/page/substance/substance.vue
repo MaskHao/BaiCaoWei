@@ -50,12 +50,12 @@
 </template>
 
 <script>
-  import footerBox from 'components/footerBox'
-  import homeIcon from 'components/homeIcon'
-  import {getEatIndex,getCategory,eatitLike} from 'service/getData'
+  import footerBox from '../../components/footerBox'
+  import homeIcon from '../../components/homeIcon'
+  import {getEatIndex,getCategory,eatitLike} from '../../service/getData'
   import { swiper, swiperSlide } from 'vue-awesome-swiper'
-  import vAlert from 'components/alertDialog'
-  import {getSessionStore} from 'assets/js/mUtils'
+  import vAlert from '../../components/alertDialog'
+  import {getSessionStore} from '../../assets/js/mUtils'
 
   export default {
     data () {

@@ -177,8 +177,8 @@
 <script>
 import { orderListGet, orderDelete, payType, orderCancel, addCart, orderRecept, orderConform, orderRepay, buyAgain, userQiyuInfo } from '../../service/getData'
 import payModule from './payModule'
-import vAlert from 'components/alertDialog'
-import vConfirm from 'components/confirmDialog'
+import vAlert from '../../components/alertDialog'
+import vConfirm from '../../components/confirmDialog'
 import orderHeader from './orderHeader'
 import { setSessionStore, getSessionStore, addScript } from '../../assets/js/mUtils'
 export default {

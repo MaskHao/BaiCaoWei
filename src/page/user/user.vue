@@ -112,10 +112,10 @@
 </template>
 
 <script>
-    import footerBox from 'components/footerBox'
-    import homeIcon from 'components/homeIcon'
-    import {userInfo,orderNum,coupCounts} from 'service/getData'
-    import {setSessionStore,getSessionStore} from 'assets/js/mUtils'
+    import footerBox from '../../components/footerBox'
+    import homeIcon from '../../components/homeIcon'
+    import {userInfo,orderNum,coupCounts} from '../../service/getData'
+    import {setSessionStore,getSessionStore} from '../../assets/js/mUtils'
 
     export default {
       data () {
