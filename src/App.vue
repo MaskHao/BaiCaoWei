@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<div>111111
 		<transition name="router-fade" mode="out-in">
 			<keep-alive>
 			    <router-view v-if="$route.meta.keepAlive"></router-view>
@@ -13,7 +13,15 @@
 
 <script>
   	export default {
-    	components:{},
+			components:{},
+			methods: {
+				getData() {
+					console.log(1111)
+				}
+			},
+			created () {
+				this.getData()
+			}
   	}
 
 </script>
